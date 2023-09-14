@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('temp.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        form {
+            margin-top: 200px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            height: 375px;
+        }
+
+        img {
+            height: 100px; /* Increase the height of the logo */
+            margin-bottom: 10px; /* Add some spacing below the logo */
+            width: 100px;
+        }
+
+        h3 {
+            margin-bottom: 20px; /* Add some spacing below the h3 tag */
+            font-size: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 26px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 8px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="search_application.php" method="post">
+        <img src="coep_logoBlack.png" alt="coep_logoBlack">
+        <h3>COEP Technological University</h3>
+        <label>Application Number:</label>
+        <input type="text" name="application_number" placeholder="Enter Application Number " required>
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
